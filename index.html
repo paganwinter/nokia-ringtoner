@@ -44,9 +44,9 @@ function play(notes, bpm = 100) {
   osc.connect(gain);
   gain.connect(audio.destination);
 
-  osc.frequency.setValueAtTime(100, 0);
-  gain.gain.setValueAtTime(100, 1);
-  gain.gain.setValueAtTime(0, 1);
+  // osc.frequency.setValueAtTime(100, 0);
+  // gain.gain.setValueAtTime(100, 1);
+  // gain.gain.setValueAtTime(0, 1);
 
   function clamp(x = 0, a, b) {
     return  (x < a && (x = a), x > b ? b : x)
